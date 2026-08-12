@@ -80,6 +80,8 @@ Cellpose-SAM segmentation  +  CNN 5-class classifier (full / broken /
 rejected / weak / fatty)  +  height-based sub-classification of BROKEN
 grains only, calibrated in mm via a 5 PKR reference coin.
 """
+import utils.transport
+import utils.session
 import os
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "max_split_size_mb:128")
 
